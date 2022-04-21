@@ -81,7 +81,7 @@ main p {
 }
 
 /****************** LARGE VIEW ******************************/
-@media screen and (min-width: 32em) {
+@media screen and (min-width: 35em) {
   h1 {
     padding-bottom: 0%;
   }
