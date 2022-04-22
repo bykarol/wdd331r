@@ -111,6 +111,11 @@ main p {
     border: none;
   }
 
+  .post-date {
+    font-size: large;
+    margin-top: .2rem;
+  }
+
   .post-content {
     border-left: ridge 1pt var(--light-gray);
   }
