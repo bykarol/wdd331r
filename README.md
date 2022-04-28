@@ -1,3 +1,3 @@
 # wdd331r
-Advanced CSS
-Complex CSS selectors, advanced CSS layout and positioning techniques, CSS transitions and animations, CSS Preprocessing, an introduction to CSS libraries, and using scalable vector graphics (SVG) with HTML and CSS.
+Web dev II
+Building websites with HTML, CSS, and Javascript. This course will have a stronger emphasis on Javascript development and mobile design as students create mobile web applications.
