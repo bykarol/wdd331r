@@ -1,0 +1,58 @@
+/* VARIABLES */
+body {
+  background: white;
+  padding: 0%;
+  margin: 0%; }
+  @media (min-width: 41em) {
+    body {
+      background: red; } }
+  @media (max-width: 41em) {
+    body {
+      background: cyan; } }
+  @media (max-width: 31em) {
+    body {
+      background: green; } }
+  @media (min-width: 60em) {
+    body {
+      background: yellow; } }
+  body h1 {
+    color: white;
+    text-shadow: 7px 5px 5px black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+#contactform {
+  background-color: #fffacd;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+  #contactform input,
+  #contactform textarea {
+    background-color: white;
+    flex: 2;
+    padding: .5rem;
+    margin-bottom: .5rem; }
+  @media (min-width: 41em) {
+    #contactform fieldset > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+    #contactform label {
+      width: 100px;
+      text-align: right;
+      padding-right: .3rem; } }
+
+/*# sourceMappingURL=styles_v2.css.map */

@@ -1,0 +1,117 @@
+/* VARIABLES */
+//colors
+$body-background-color: darkred;
+$form-background-color: #fffacd;
+$input-color: white;
+$headlines-color: white;
+
+//set breakpoint sizes
+$break-small: 31em;
+$break-medium: 41em;
+$break-large: 60em;
+
+//mixin breakpoints, media queries
+@mixin breakpoint($break) {
+  @if $break ==small {
+    @media (max-width: $break-small) {
+      @content;
+    }
+  }
+
+  @else if $break ==medium {
+    @media (max-width: $break-medium) {
+      @content;
+    }
+  }
+
+  @else if $break ==large {
+    @media (min-width: $break-medium) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $break-large) {
+      @content;
+    }
+  }
+}
+
+//mixin flex-container
+@mixin flex-container($axis, $wrap: nowrap) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: $axis $wrap;
+  -ms-flex-flow: $axis $wrap;
+  flex-flow: $axis $wrap;
+}
+
+//Declaración de código
+body {
+  background: white;
+  padding: 0%;
+  margin: 0%;
+
+  @include breakpoint(large) {
+    background: red;
+  }
+
+  @include breakpoint(medium) {
+    background: cyan;
+  }
+
+  @include breakpoint(small) {
+    background: green;
+  }
+
+  @include breakpoint(61em) {
+    background: yellow;
+  }
+
+  h1 {
+    color: $headlines-color;
+    text-shadow: 7px 5px 5px black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//anidado
+#contactform {
+  background-color: $form-background-color;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  fieldset > div {
+    @include flex-container(column);
+
+  }
+
+  input,
+  textarea {
+    background-color: $input-color;
+    flex: 2;
+    padding: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  //large view
+  @include breakpoint(large) {
+    & {
+      fieldset>div {
+        @include flex-container(row, wrap);
+      }
+
+      label {
+        width: 100px;
+        text-align: right;
+        padding-right: .3rem;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+  background: white; }
+  @media (max-width: 60em) {
+    body {
+      background: darkred; } }
+  @media (max-width: 31em) {
+    body {
+      background: cyan; } }
+  @media (max-width: 20em) {
+    body {
+      background: green; } }
+  @media (“480px”) {
+    body {
+      background: yellow; } }
+
+#contactform {
+  background-color: white; }
+  #contactform input, #contactform textarea {
+    background-color: white;
+    flex: 2; }
+  @media (min-width: 20em) {
+    #contactform {
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+/*# sourceMappingURL=styles.css.map */
