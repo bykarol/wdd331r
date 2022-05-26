@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+//variables
+$baseColor: #e3e4e5;
+$secondColor: white; 
+$accent: #3c3c3b;
+$promo: darkgreen;
+$baseFont: 'Source Sans Pro', sans-serif; 
+$width: 360px;
+
+//section format
+%text-format {
+  margin: .2em 1em;
+  font-family: $baseFont;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+%general-padding {
+  padding: .2em 1em;
+}
+
+%reset {
+  padding: 0%;
+  margin: 0;
+}
+
+%btn {
+  background-color: $accent;
+  border-radius: 5px;
+  color: $secondColor;
+  cursor: pointer;
+}
+
+body {
+  width: $width;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $baseColor;
+  border-radius: 3px;
+  &__title {
+    @extend %general-padding;    
+    color: $accent;
+  }
+  &__span {
+    padding: .3em .5em;
+    border-radius: 10px;
+    margin-right: 2em;
+    background-color: $accent;
+    font-weight: bold;
+    color: $secondColor;
+  }
+}
+
+.items-container {
+  background-color: $baseColor;
+  border-radius: 3px;
+
+  .product {
+    @extend %text-format;
+    @extend %general-padding;
+    background-color: $secondColor;
+    &__name { @extend %reset; }
+    &__price { @extend %reset; font-weight: bold; }
+    &__description { @extend %reset; }
+  }
+
+  .product--promo {
+    color: $promo;
+  }
+
+  .promo-code {
+    grid-template-columns: 70% 30%;
+    justify-content: space-between;
+    &__btn {
+      @extend %btn;
+    }
+  }
+}
+
+
+
