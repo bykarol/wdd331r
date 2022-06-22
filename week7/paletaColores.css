@@ -1,0 +1,7 @@
+:root {
+	--base-color-hs: 335, 100%;
+	--base-color: hsl(var(--base-color-hs), 50%);
+	--base-color-light: hsl(var(--base-color-hs), 85%);
+	--base-color-dark: hsl(var(--base-color-hs), 20%);
+	--base-color-translucent: hsla(var(--base-color-hs), 50%, .5);
+}
