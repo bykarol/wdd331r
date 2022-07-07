@@ -1,0 +1,35 @@
+.wrapper {
+  background-color: lightblue;
+  padding: 1rem;
+
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+  }
+
+  #circle {
+   background: radial-gradient(darkred 20%, red, darkorange 60%, pink);
+   width: 140px;
+   border-radius: 50% 50% 40% 40%;
+
+
+  }
+
+  #square {
+    background-color: green;
+    // border-top-left-radius: 10%;
+    // border-top-right-radius: 100%;
+    // border-bottom-left-radius: 100%;
+    border-radius: 10% 100% 0 100%;
+
+  }
+
+  #rectangle {
+   background: linear-gradient(45deg, darkred 20%, red, darkorange 60%, pink);
+   width: 350px;
+
+  }
+}
+
+
