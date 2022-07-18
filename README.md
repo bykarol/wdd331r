@@ -10,5 +10,6 @@ Complex CSS selectors, advanced CSS layout and positioning techniques, CSS trans
 -Week 7: Prove Custom properties - [Quote Box](https://bykarol.github.io/wdd331r/week7/index.html)  
 -Week 8: Prove Grid [view Cards](https://bykarol.github.io/wdd331r/Week8/index.html)  
 -Week 9: Prove SVG [View example in codepen](https://codepen.io/bykarol/pen/wvmMPRL)  
+-Week 11: Web Typography [See example](https://bykarol.github.io/wdd331r/week11/indexProve.html)  
 -Week 12: Shapes and Gradients - [Video Tutorial](https://youtu.be/21fSYkJMsu8)  
 
