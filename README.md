@@ -12,4 +12,5 @@ Complex CSS selectors, advanced CSS layout and positioning techniques, CSS trans
 -Week 9: Prove SVG [View example in codepen](https://codepen.io/bykarol/pen/wvmMPRL)  
 -Week 11: Web Typography [See example](https://bykarol.github.io/wdd331r/week11/indexProve.html)  
 -Week 12: Shapes and Gradients - [Video Tutorial](https://youtu.be/21fSYkJMsu8)  
+-Week 13: Zen Garden Project - [Video Tutorial](https://youtu.be/LJwEIORwoX8)  
 
